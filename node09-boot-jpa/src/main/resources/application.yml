@@ -1,0 +1,17 @@
+# 端口
+server:
+  port: 8009
+
+spring:
+  application:
+    # 应用名称
+    name: node09-boot-jpa
+  datasource:
+    url: jdbc:mysql://localhost:3306/data_jpa?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

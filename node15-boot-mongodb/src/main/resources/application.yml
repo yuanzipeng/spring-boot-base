@@ -1,0 +1,10 @@
+# 端口
+server:
+  port: 8015
+
+spring:
+  application:
+    # 应用名称
+    name: node15-boot-mongodb
+  profiles:
+    active: dev

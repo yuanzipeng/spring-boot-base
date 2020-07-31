@@ -1,0 +1,8 @@
+# 端口
+server:
+  port: 8003
+
+spring:
+  application:
+    # 应用名称
+    name: node03-boot-exception

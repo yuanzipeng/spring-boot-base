@@ -1,0 +1,8 @@
+# 端口
+server:
+  port: 8004
+
+spring:
+  application:
+    # 应用名称
+    name: node04-boot-task

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.boot.parent</groupId>
+    <artifactId>spring-boot-base</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <!-- SpringBoot 2.0 入门基础 -->
+        <module>node01-boot-hello</module>
+        <!-- SpringBoot 2.0 配置日志打印 -->
+        <module>node02-boot-log4j</module>
+        <!-- SpringBoot 2.0 全局异常处理 -->
+        <module>node03-boot-exception</module>
+        <!-- SpringBoot 2.0 异步任务和定时任务 -->
+        <module>node04-boot-task</module>
+        <!-- SpringBoot 2.0 拦截器配置 -->
+        <module>node05-boot-intercept</module>
+        <!-- SpringBoot 2.0 多数据源JDBC配置 -->
+        <module>node06-boot-jdbc</module>
+        <!-- SpringBoot 2.0 引入druid连接池 -->
+        <module>node07-boot-druid</module>
+        <!-- SpringBoot 2.0 引入Redis缓存服务 -->
+        <module>node08-boot-redis</module>
+        <!-- SpringBoot 2.0 引入JAP数据操作 -->
+        <module>node09-boot-jpa</module>
+        <!-- SpringBoot 2.0 整合Mybatis框架 -->
+        <module>node10-boot-mybatis</module>
+        <!-- SpringBoot 2.0 配置AOP切面编程 -->
+        <module>node11-boot-aop</module>
+        <!-- SpringBoot 2.0 事务管理 -->
+        <module>node12-boot-transaction</module>
+        <!-- SpringBoot 2.0 Cache注解 -->
+        <module>node13-boot-cache</module>
+        <!-- SpringBoot 2.0 文件管理 -->
+        <module>node14-boot-file</module>
+        <!-- SpringBoot 2.0 MongoDB数据库 -->
+        <module>node15-boot-mongodb</module>
+        <!-- SpringBoot 2.0 监控管理 -->
+        <module>node16-boot-actuator</module>
+        <!-- SpringBoot 2.0 打包运行 -->
+        <module>node17-boot-package</module>
+    </modules>
+
+    <!-- 依赖版本管理 -->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <mysql.version>5.1.38</mysql.version>
+        <druid.version>1.1.13</druid.version>
+        <commons.lang.version>2.6</commons.lang.version>
+        <commons.fileupload.version>1.2.2</commons.fileupload.version>
+        <commons.io.version>2.5</commons.io.version>
+        <commons.codec.version>1.10</commons.codec.version>
+        <commons.configuration.version>1.10</commons.configuration.version>
+        <joda.time.version>2.9.9</joda.time.version>
+        <fastjson.version>1.2.47</fastjson.version>
+    </properties>
+
+
+
+    <!-- 项目构建 -->
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

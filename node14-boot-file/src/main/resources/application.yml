@@ -1,0 +1,16 @@
+# 端口
+server:
+  port: 8014
+
+spring:
+  application:
+    # 应用名称
+    name: node14-boot-file
+  servlet:
+    multipart:
+      # 启用
+      enabled: true
+      # 上传文件单个限制
+      max-file-size: 5MB
+      # 总限制
+      max-request-size: 6MB

@@ -1,0 +1,11 @@
+# 端口
+server:
+  port: 8002
+
+spring:
+  application:
+    # 应用名称
+    name: node02-boot-log4j2
+  profiles:
+    # 使用的配置文件
+    active: pro
